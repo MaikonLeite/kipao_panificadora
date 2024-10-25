@@ -1,0 +1,205 @@
+
+.Banner h1 {
+    margin-top: 0px;
+    color: #856306;
+    font-size: 90px;
+    max-height: 100px;
+    margin-bottom: 0px;
+    text-align: center;
+    font-weight: bold;
+    text-shadow: 3px 3px 4px black;
+}
+
+.Banner{
+    position: fixed;
+    top: 0;
+    right: 0;
+    border: 3px;
+    min-width: 100%;
+    height: 140px;
+    background-image: url("imgs/trigo.jpg");
+    margin-bottom: 150px;
+    box-shadow: 4px 4px 6px #e73f22;
+    
+}
+
+
+.Banner h3{
+    font-size: 25px;
+    margin-top: 2px;
+    text-align: center;
+    color: #856306;
+    text-shadow: 1px 1px 1px black;
+    
+}
+
+#link{
+    position:fixed;
+    top: 10px;
+    margin-left: 10px;
+    text-decoration: none;
+    color: #856306;
+    
+}
+
+.instagram{
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: bold;
+    color: #856306;
+    text-shadow:3px 1px 2px black;
+
+}
+
+#inicio{
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    text-shadow:1px 1px 2px white;
+}
+
+#contato{
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    text-shadow:1px 1px 2px white
+}
+
+#produtos{
+    text-decoration: none;
+    font-weight: bold;
+    color:black;
+    text-shadow:1px 1px 2px white;
+}
+
+#localizacao{
+    text-decoration: none;
+    font-weight: bold;
+    color:black;
+    text-shadow:1px 1px 2px white;
+}
+
+
+
+
+#bolo{
+    
+    width: 100%;
+    height: 700px;
+    background-image: url(imgs/bolo.jpg);
+    margin-bottom: 150px;
+    box-shadow: 4px 4px 6px #e73f22;
+}
+
+#bolo p {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+    font-size: 100px;
+    color: #f6f2ee;
+    font-style: italic;
+    text-shadow:2px 2px 4px black;
+    margin-top: 200px;
+}
+
+#bolo scan{ 
+        font-family: "Kablammo", system-ui;
+        font-optical-sizing: auto;
+        text-align: center;
+        color: #f6f2ee;
+        font-size: 150px;
+        font-weight: 400;
+        font-style: normal;
+        font-variation-settings:
+          "MORF" 0;
+      }
+
+#Produtos{
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: auto;
+    margin-bottom: 200px;
+    margin-top: 200px;
+    padding-bottom: 40px;
+}  
+
+#Produtos img{
+    margin-right: 35px;
+    border-radius: 20px;
+    box-shadow: 4px 4px 6px #e73f22;
+
+}
+
+#pedido{
+    width: 100%;
+    height: 30px;
+    background-image: url(imgs/entrega.jpeg);
+    background-repeat:no-repeat ;
+    background-size: cover;
+    margin-right: 200px;
+    margin-bottom: 200px;
+    padding-bottom: 200px;
+    box-shadow: 4px 4px 6px #e73f22;
+    text-align: center;
+    padding-top: 100px;
+}
+
+
+
+.whatsapp-link{
+    font-size: 100px;
+    padding-top: 100px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #f6f2ee;
+    font-style: italic;
+    text-shadow:2px 2px 4px black;
+    text-decoration: none;
+}
+
+
+
+#pedido img{
+    margin-left: 200px;
+}
+
+
+#local{
+    width: 100%;
+    height: 600px;
+    background-image: url("imgs/footer_logo.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 4px 4px 6px #e73f22;
+
+}
+
+#local h3{
+    font-size: 50px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #f6f2ee;
+    font-style: italic;
+    text-shadow:2px 2px 4px black;
+    text-align: center;
+}
+
+.mapouter{
+    text-align: center;
+    width: 100%;
+}
+
+footer{
+    text-decoration: none;
+    background-color: black;
+    box-shadow: 4px 4px 6px #e73f22;
+
+}
+
+footer p{
+    text-align: center;
+    color: #f6f2ee;
+}
+
+footer a{
+    text-decoration: none;
+    color: #e73f22;
+}
+    
