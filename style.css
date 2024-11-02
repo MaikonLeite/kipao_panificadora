@@ -1,94 +1,96 @@
+.Banner {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 140px;
+    background-image: url("imgs/trigo.jpg");
+    box-shadow: 4px 4px 6px #e73f22;
+    z-index: 1000;
+}
 
 .Banner h1 {
-    margin-top: 0px;
+    margin: 0;
     color: #856306;
     font-size: 90px;
     max-height: 100px;
-    margin-bottom: 0px;
     text-align: center;
     font-weight: bold;
     text-shadow: 3px 3px 4px black;
 }
 
-.Banner{
-    position: fixed;
-    top: 0;
-    right: 0;
-    border: 3px;
-    min-width: 100%;
-    height: 140px;
-    background-image: url("imgs/trigo.jpg");
-    margin-bottom: 150px;
-    box-shadow: 4px 4px 6px #e73f22;
-    
-}
-
-
-.Banner h3{
+.Banner h3 {
     font-size: 25px;
     margin-top: 2px;
     text-align: center;
     color: #856306;
     text-shadow: 1px 1px 1px black;
-    
 }
 
-#link{
-    position:fixed;
+#link {
+    position: fixed;
     top: 10px;
-    margin-left: 10px;
+    left: 10px; /* Mude para 'left' para alinhamento à esquerda */
     text-decoration: none;
     color: #856306;
-    
+    z-index: 1000; /* Garante que o link fique acima de outros elementos */
 }
 
-.instagram{
+.Banner {
+    padding: 10px; /* Ajuste o padding se necessário */
+}
+
+
+.instagram {
     text-decoration: none;
-    font-size: 22px;
+    font-size: 15px;
+    padding-bottom: 0px;
     font-weight: bold;
     color: #856306;
-    text-shadow:3px 1px 2px black;
-
+    text-shadow: 3px 1px 2px black;
 }
 
-#inicio{
+.instagram {
+    display: flex; /* Alinha ícone e texto */
+    align-items: center; /* Alinhamento vertical */
+    text-decoration: none;
+    color: #856306; /* Cor do texto */
+    font-size: 20px; /* Ajuste o tamanho conforme necessário */
+}
+
+.instagram i {
+    margin-right: 8px; /* Espaço entre o ícone e o texto */
+    font-size: 22px; /* Tamanho do ícone */
+}
+
+
+#link a {
+    font-size: 15px;
     text-decoration: none;
     font-weight: bold;
-    color: black;
-    text-shadow:1px 1px 2px white;
+    color: #856306;
+    text-shadow: 1px 1px 2px white;
 }
 
-#contato{
+#link a {
+
+    display: flex; /* Para alinhar o ícone e o texto */
+    align-items: center; /* Alinha verticalmente */
     text-decoration: none;
-    font-weight: bold;
-    color: black;
-    text-shadow:1px 1px 2px white
+    color: #856306;
 }
 
-#produtos{
-    text-decoration: none;
-    font-weight: bold;
-    color:black;
-    text-shadow:1px 1px 2px white;
-}
-
-#localizacao{
-    text-decoration: none;
-    font-weight: bold;
-    color:black;
-    text-shadow:1px 1px 2px white;
+#link a i {
+    margin-right: 8px; /* Espaço entre o ícone e o texto */
 }
 
 
-
-
-#bolo{
-    
+#bolo {
     width: 100%;
     height: 700px;
     background-image: url(imgs/bolo.jpg);
-    margin-bottom: 150px;
     box-shadow: 4px 4px 6px #e73f22;
+    margin-bottom: 150px;
 }
 
 #bolo p {
@@ -97,109 +99,224 @@
     font-size: 100px;
     color: #f6f2ee;
     font-style: italic;
-    text-shadow:2px 2px 4px black;
+    text-shadow: 2px 2px 4px black;
     margin-top: 200px;
 }
 
-#bolo scan{ 
-        font-family: "Kablammo", system-ui;
-        font-optical-sizing: auto;
-        text-align: center;
-        color: #f6f2ee;
-        font-size: 150px;
-        font-weight: 400;
-        font-style: normal;
-        font-variation-settings:
-          "MORF" 0;
-      }
+#bolo span {
+    font-family: "Kablammo", system-ui;
+    text-align: center;
+    color: #f6f2ee;
+    font-size: 150px;
+    font-weight: 400;
+}
 
-#Produtos{
+#Produtos {
     display: flex;
-    overflow-x: auto;
-    scroll-behavior: auto;
-    margin-bottom: 200px;
-    margin-top: 200px;
-    padding-bottom: 40px;
-}  
+    overflow: hidden; /* Oculta o conteúdo que sai da área visível */
+    position: relative;
+    width: 100%; /* Certifique-se de que a largura é 100% */
+    height: 300px; /* Ajuste a altura conforme necessário */
+}
 
-#Produtos img{
+#Produtos .produtos-container {
+    display: flex;
+    animation: scroll 12s linear infinite; /* Ajuste a duração conforme necessário */
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0); /* Início na posição original */
+    }
+    100% {
+        transform: translateX(-53%); /* Move todo o conteúdo para a esquerda */
+    }
+}
+
+#Produtos img {
     margin-right: 35px;
     border-radius: 20px;
     box-shadow: 4px 4px 6px #e73f22;
-
+    max-width: 100%; /* Responsividade */
 }
 
-#pedido{
+#pedido {
     width: 100%;
     height: 30px;
     background-image: url(imgs/entrega.jpeg);
-    background-repeat:no-repeat ;
+    background-repeat: no-repeat;
     background-size: cover;
-    margin-right: 200px;
-    margin-bottom: 200px;
-    padding-bottom: 200px;
     box-shadow: 4px 4px 6px #e73f22;
     text-align: center;
-    padding-top: 100px;
+    padding: 100px 0; /* Melhorando a consistência */
 }
 
+.popup {
+    display: none; /* Oculta o popup por padrão */
+    position: fixed;
+    z-index: 1000; /* Coloca o popup acima de outros elementos */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Fundo escuro e transparente */
+    
+}
 
+.popup-content {
+    margin: 15% auto; /* Centraliza o popup */
+    padding: 20px;
+    border: 1px solid #888;
+    border-radius: 20px;
+    width: 80%; /* Largura do popup */
+    max-width: 500px; /* Largura máxima do popup */
+    text-align: center; /* Centraliza o texto */
+    text-shadow: 3px 3px 4px black;
+    box-shadow: 2px 4px 6px 10px #e73f22;
+    background-image: url(imgs/iconwhats.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
 
-.whatsapp-link{
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.whatsapp-link {
+    font-size: 20px;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.whatsapp-link {
     font-size: 100px;
-    padding-top: 100px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     color: #f6f2ee;
     font-style: italic;
-    text-shadow:2px 2px 4px black;
+    text-shadow: 2px 2px 4px black;
+    text-decoration: none;
+}
+
+#contato {
+    margin: 50px 0; /* Espaço em cima e embaixo */
+    padding: 20px;
+    background-color: #771f0b; /* Cor de fundo da seção */
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 4px 4px 6px #e73f22;
+    
+}
+
+#contato h3 {
+    font-size: 40px;
+    font-style: italic;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+    color: #f6f2ee;
+    text-shadow: 2px 2px 4px black;
+}
+
+#contato form {
+    font-size: 25px;
+    font-style: italic;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #f6f2ee;
+    text-shadow: 2px 2px 4px black;
+    max-width: 600px; /* Largura máxima do formulário */
+    margin: 0 auto; /* Centraliza o formulário */
+}
+
+#contato label {
+    font-weight: bold; /* Destaca os rótulos */
+}
+
+#contato input, #contato textarea {
+    width: 100%; /* Preenche a largura do contêiner */
+    padding: 10px;
+    margin: 5px 0; /* Espaço entre os campos */
+    border: 1px solid #ccc; /* Borda suave */
+    border-radius: 4px; /* Bordas arredondadas nos campos */
+}
+
+#contato button {
+    background-color: #856306; /* Cor de fundo do botão */
+    color: white; /* Cor do texto */
+    padding: 10px 15px; /* Espaçamento interno do botão */
+    border: none; /* Remove borda padrão */
+    border-radius: 4px; /* Bordas arredondadas no botão */
+    cursor: pointer; /* Cursor em forma de mão ao passar por cima */
+}
+
+#contato button:hover {
+    background-color: #0df80d; /* Cor do botão ao passar o mouse */
+}
+
+.contato-info {
+    margin-top: 20px; /* Espaço acima das informações de contato */
+    text-align: center; /* Centraliza o texto */
+}
+
+.contato-info p {
+    font-style: italic;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+    color: #f6f2ee;
+    margin: 5px 0; /* Espaço entre os parágrafos */
+}
+
+.contato-info p a{
     text-decoration: none;
 }
 
 
 
-#pedido img{
-    margin-left: 200px;
-}
 
-
-#local{
+#local {
     width: 100%;
     height: 600px;
     background-image: url("imgs/footer_logo.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
     box-shadow: 4px 4px 6px #e73f22;
-
 }
 
-#local h3{
+#local h3 {
     font-size: 50px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     color: #f6f2ee;
     font-style: italic;
-    text-shadow:2px 2px 4px black;
+    text-shadow: 2px 2px 4px black;
     text-align: center;
 }
 
-.mapouter{
+.mapouter {
     text-align: center;
     width: 100%;
 }
 
-footer{
-    text-decoration: none;
+footer {
     background-color: black;
     box-shadow: 4px 4px 6px #e73f22;
-
 }
 
-footer p{
+footer p {
     text-align: center;
     color: #f6f2ee;
 }
 
-footer a{
+footer a {
     text-decoration: none;
     color: #e73f22;
 }
-    
