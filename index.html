@@ -3,59 +3,122 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kipão|Panificadora</title>
+    <meta name="description" content="Ki-Pão Panificadora - Sabores que encantam, tradição que aquece!">
+    <meta name="keywords" content="panificadora, bolos, doces, Cambira, qualidade">
+    <title>Kipão | Panificadora</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kablammo&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="Banner">
-        <h1>Ki-Pão|Panificadora</h1>
-        <h3>Sabores que encantam, tradição que aquece! 🤎
-            + de 15 anos levando qualidade para sua mesa.</h3>
-    </div>
+    <header class="Banner">
+        <h1>Ki-Pão | Panificadora</h1>
+        <h3>Sabores que encantam, tradição que aquece! 🤎 + de 15 anos levando qualidade para sua mesa.</h3>
+    </header>
     <div id="link">
-        <img id="insta_banner" src="imgs/insta.png" height="20px" width="20px" alt="insta_logo">
-        <a class="instagram" href="https://www.instagram.com/kipaocambira/">@kipaocambira</a><br><br>
-        <a id="inicio" href="#bolo">Início</a><br>
-        <a id="produtos" href="#Produtos">Produtos</a><br>
-        <a id="contato" href="#pedido">Contato</a><br>
-        <a id="localizacao" href="#local">Localização</a><br>
-    </div>    
+        <a class="instagram" href="https://www.instagram.com/kipaocambira/">
+            <i class="fab fa-instagram"></i> @kipaocambira
+        </a>
+        <a id="inicio" href="#bolo"><i class="fas fa-home"></i> Início</a><br>
+        <a id="produtos" href="#Produtos"><i class="fas fa-bread-slice"></i> Produtos</a><br>
+        <a id="contato1" href="#pedido"><i class="fas fa-envelope"></i> Contato</a><br>
+        <a id="localizacao" href="#local"><i class="fas fa-map-marker-alt"></i> Localização</a><br>
+    </div>
     
-        <div id="bolo">
-            <p> <br>Sabores irresistíveis <br> a <br>cada <br> <scan>Mordida</scan></p>
+      
+    
+    <main>
+        <section id="bolo">
+            <p>Sabores irresistíveis a cada <span>Mordida</span></p>
+        </section>
+
+        <section id="Produtos">
+            <div class="produtos-container">
+                <img src="imgs/bolo_viola.jpeg" alt="Bolo Viola" height="280" width="350">
+                <img src="imgs/bolo_choco.jpeg" alt="Bolo de Chocolate" height="280" width="350">
+                <img src="imgs/donuts.jpeg" alt="Donuts" height="280" width="350">
+                <img src="imgs/bolo_hei.jpeg" alt="Bolo Hei" height="280" width="350">
+                <img src="imgs/torta_frango.jpeg" alt="Torta de Frango" height="280" width="350">
+                <img src="imgs/bolo_uni.jpeg" alt="Bolo Uni" height="280" width="350">
+                <img src="imgs/donuts2.jpeg" alt="Donuts 2" height="280" width="350">
+                <img src="imgs/carolina.jpeg" alt="Carolina" height="280" width="350">
+                <img src="imgs/pote.jpeg" alt="Pote" height="280" width="350">
+            </div>
+        </section>
+        
+
+        <section id="pedido">
+            <a class="whatsapp-link" id="openPopup" onclick="openPopup()">Faça seu pedido aqui</a>
+        </section>
+
+        <div id="popup" class="popup">
+            <div class="popup-content">
+                <span class="close" onclick="closePopup()">&times;</span>
+                <a class="whatsapp-link" href="https://web.whatsapp.com/send?phone=5543998007908" target="_blank">Enviar Pedido via WhatsApp</a>
+            </div>
         </div>
 
-        <div id="Produtos">
-            <img src="imgs/bolo_viola.jpeg" alt="bolo_viola" height="280" width="350"  >
-            <img src="imgs/bolo_choco.jpeg" alt="bolo_choco" height="280" width="350">
-            <img src="imgs/donuts.jpeg" alt="donuts" height="280" width="350">
-            <img src="imgs/bolo_hei.jpeg" alt="bolo_hei" height="280" width="350">
-            <img src="imgs/torta_frango.jpeg" alt="torta_frango" height="280" width="350">
-            <img src="imgs/bolo_uni.jpeg" alt="bolo_uni" height="280" width="350">
-            <img src="imgs/donuts2.jpeg" alt="donuts2" height="280" width="350">
-            <img src="imgs/carolina.jpeg" alt="carolina" height="280" width="350">
-            <img src="imgs/pote.jpeg" alt="pote" height="280" width="350">
+        <script>
+        function openPopup() {
+            document.getElementById("popup").style.display = "block";
+        }
+        
+        function closePopup() {
+            document.getElementById("popup").style.display = "none";
+        }
+        
+        // Fechar o popup se o usuário clicar fora da área do popup
+        window.onclick = function(event) {
+            var popup = document.getElementById("popup");
+            if (event.target == popup) {
+                popup.style.display = "none";
+            }
+        }
+        </script>
 
-        </div>
-
-        <div id="pedido">
-            <a class="whatsapp-link" href="https://web.whatsapp.com/send?phone=5543998007908">Faça seu pedido aqui</a>
-        </div>
+      
 
         <div id="contato">
-
-        </div>
+            <h3>Entre em Contato</h3>
+            <form action="#" method="post">
+                <label for="nome">Nome:</label><br>
+                <input type="text" id="nome" name="nome" required><br><br>
         
-        <div id="local">
-            <h3>Localização</h3>
-            <div class="mapouter"><div class="gmap_canvas"><iframe class="gmap_iframe" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%&amp;height=400&amp;hl=en&amp;q=R. Rio Grande do Sul, 551-603, Cambira - PR, 86890-000&amp;t=&amp;z=15&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a href="https://embed-googlemap.com">google maps embed</a></div><style>.gmap_canvas {overflow:hidden;background:none!important;width:100%;height:400px;}.gmap_iframe {width:100%!important;height:400px!important;}</style></div>
-
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+        
+                <label for="mensagem">Mensagem:</label><br>
+                <textarea id="mensagem" name="mensagem" rows="4" required></textarea><br><br>
+        
+                <button type="submit">Enviar</button>
+            </form>
+            <div class="contato-info">
+                <p>Você também pode nos contatar por:</p>
+                <p><i class="fas fa-phone"></i> (43) 99999-9999</p>
+                <p><i class="fas fa-envelope"></i> contato@kipao.com.br</p>
+                <p><i class="fab fa-instagram"></i> <a href="https://www.instagram.com/kipaocambira/">@kipaocambira</a></p>
+            </div>
         </div>
+
+        <section id="local">
+            <h3>Localização</h3>
+            <div class="mapouter">
+                <div class="gmap_canvas">
+                    <iframe class="gmap_iframe" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%&amp;height=400&amp;hl=en&amp;q=R. Rio Grande do Sul, 551-603, Cambira - PR, 86890-000&amp;t=&amp;z=15&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
+                    <a href="https://embed-googlemap.com">google maps embed</a>
+                </div>
+                <style>
+                    .gmap_canvas {overflow:hidden;background:none!important;width:100%;height:400px;}
+                    .gmap_iframe {width:100%!important;height:400px!important;}
+                </style>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Desenvolvido por <a href="https://www.linkedin.com/in/maikon-leite/">Maikon Leite</a>.</p>
+    </footer>
 </body>
-<footer>
-    <p>Desenvolvido por <a href="https://www.linkedin.com/in/maikon-leite/"><scan>Maikon Leite</scan>.</a></p>
-</footer>
 </html>
