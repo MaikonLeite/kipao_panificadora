@@ -89,6 +89,8 @@
     width: 100%;
     height: 700px;
     background-image: url(imgs/bolo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
     box-shadow: 4px 4px 6px #e73f22;
     margin-bottom: 150px;
 }
@@ -99,6 +101,7 @@
     font-size: 100px;
     color: #f6f2ee;
     font-style: italic;
+    padding-top: 150px;
     text-shadow: 2px 2px 4px black;
     margin-top: 200px;
 }
@@ -117,6 +120,7 @@
     position: relative;
     width: 100%; /* Certifique-se de que a largura é 100% */
     height: 300px; /* Ajuste a altura conforme necessário */
+    padding-bottom: 100px;
 }
 
 #Produtos .produtos-container {
@@ -141,6 +145,7 @@
 }
 
 #pedido {
+    
     width: 100%;
     height: 30px;
     background-image: url(imgs/entrega.jpeg);
@@ -149,7 +154,9 @@
     box-shadow: 4px 4px 6px #e73f22;
     text-align: center;
     padding: 100px 0; /* Melhorando a consistência */
+    padding-bottom: 200px;
 }
+
 
 .popup {
     display: none; /* Oculta o popup por padrão */
@@ -251,7 +258,7 @@
 }
 
 #contato button {
-    background-color: #856306; /* Cor de fundo do botão */
+    background-color: black; /* Cor de fundo do botão */
     color: white; /* Cor do texto */
     padding: 10px 15px; /* Espaçamento interno do botão */
     border: none; /* Remove borda padrão */
