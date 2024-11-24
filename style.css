@@ -84,6 +84,26 @@
     margin-right: 8px; /* Espaço entre o ícone e o texto */
 }
 
+#link #localizacao:hover{
+    color: crimson;
+   }
+
+#link #contato1:hover{
+    color: crimson;
+   }
+
+#link #produtos:hover{
+    color: crimson;
+   }
+
+#link #inicio:hover{
+    color: crimson;
+   }
+
+#link .instagram:hover{
+    color:crimson;
+   }
+
 
 #bolo {
     width: 100%;
@@ -142,6 +162,10 @@
     border-radius: 20px;
     box-shadow: 4px 4px 6px #e73f22;
     max-width: 100%; /* Responsividade */
+}
+
+#Cardapio{
+
 }
 
 #pedido {
@@ -329,6 +353,21 @@ footer a {
     color: #e73f22;
 }
 
+#Cardapio{
+    font-size: 50px;
+    background-color:#771f0b;
+    text-align: center;
+    padding-bottom: 10px;
+    margin-bottom: 50px;
+}
+
+#Cardapio a{
+    text-decoration: none;
+    color: #f6f2ee;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-style: italic;
+}
+
 @media screen and (max-width:768px) {
     #Banner{
         background-size: 340px;
@@ -453,5 +492,9 @@ footer a {
 
    #contato button{
     margin-left: 120px;
+   }
+
+   #Cardapio{
+    font-size:30px ;
    }
 }
