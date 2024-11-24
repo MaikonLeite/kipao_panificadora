@@ -1,0 +1,121 @@
+* {
+    padding:0;
+    margin:0;
+    vertical-align:baseline;
+    list-style:none;
+    border:0
+    }
+
+    body{
+        background-image: url("imgs/Prancheta-1\(1\).png");
+        background-size:auto;
+    }
+
+
+#bolos{
+    width: 900px;
+    height: 800px;
+    background-position: center;
+    background-image: url("imgs/WhatsApp\ Image\ 2024-11-23\ at\ 22.36.37.jpeg");
+    background-repeat: no-repeat;
+    background-size:455px;
+    margin-top: 30px;
+    margin-left: 310px;
+
+}
+
+#doces{
+    width: 900px;
+    height: 800px;
+    background-position: center;
+    background-image: url("imgs/WhatsApp\ Image\ 2024-11-23\ at\ 22.37.47.jpeg");
+    background-repeat: no-repeat;
+    background-size:455px;
+    margin-top: 30px;
+    margin-left: 310px;
+}
+
+#salgados{
+    width: 900px;
+    height: 800px;
+    background-position: center;
+    background-image: url("imgs/WhatsApp\ Product\ 2024-11-23\ at\ 22.38.04.jpeg");
+    background-repeat: no-repeat;
+    background-size:455px;
+    margin-left: 310px;
+}
+
+button{
+    width: 0px;
+    text-align: center;
+}
+
+button a{
+    width: 200px;
+    font-size: 20px;
+    color: azure;
+    text-decoration:none;
+    text-align: center;
+    background-color: #856306;
+    padding: 2px 200px 2px 200px;
+    border-radius: 5px;
+    margin-left:534px
+}
+
+#salgado{
+    padding: 2px 187px 2px 187px;
+}
+
+#bolo{
+    padding: 2px 203px 2px 203px;
+}
+
+@media screen and (max-width:768px) {
+
+    button a{
+        margin-left: 15px;
+        padding: 2px 140px 2px 140px;
+         }
+
+    #salgado{
+        padding: 2px 127px 2px 127px;
+    }
+
+    #bolo{
+        padding: 2px 143px 2px 143px;
+    }
+
+    body{
+        background-repeat: no-repeat;
+
+    }
+
+    #bolos{
+        margin-left: 0px;
+        height: 680px;
+        width: 98%;
+        background-size: contain;
+        margin-top: 0px;
+        margin-left: 4px;
+    }
+
+    #salgados{
+        margin-left: 0px;
+        height: 680px;
+        width: 98%;
+        background-size: contain;
+        margin-top: 0px;
+        margin-left: 4px;
+    }
+
+    #doces{
+        margin-left: 0px;
+        height: 680px;
+        width: 98%;
+        background-size: contain;
+        margin-top: 0px;
+        margin-left: 4px;
+    }
+
+
+}
