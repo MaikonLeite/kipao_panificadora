@@ -1,15 +1,15 @@
-.Banner {
+#Banner {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 100vw;
     height: 140px;
     background-image: url("imgs/trigo.jpg");
     box-shadow: 4px 4px 6px #e73f22;
     z-index: 1000;
 }
 
-.Banner h1 {
+#Banner h1 {
     margin: 0;
     color: #856306;
     font-size: 90px;
@@ -19,7 +19,7 @@
     text-shadow: 3px 3px 4px black;
 }
 
-.Banner h3 {
+#Banner h3 {
     font-size: 25px;
     margin-top: 2px;
     text-align: center;
@@ -36,7 +36,7 @@
     z-index: 1000; /* Garante que o link fique acima de outros elementos */
 }
 
-.Banner {
+#Banner {
     padding: 10px; /* Ajuste o padding se necessário */
 }
 
@@ -268,6 +268,7 @@
 
 #contato button:hover {
     background-color: #0df80d; /* Cor do botão ao passar o mouse */
+    color: black;
 }
 
 .contato-info {
@@ -326,4 +327,131 @@ footer p {
 footer a {
     text-decoration: none;
     color: #e73f22;
+}
+
+@media screen and (max-width:768px) {
+    #Banner{
+        background-size: 340px;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+    #Banner h1{
+    font-size: 30px;
+    margin-top: px;
+    text-align: center;
+    }
+
+    #Banner h3{
+        font-size: 18px;
+        margin-top: 10px
+
+    }
+
+   #link{
+    width: 350px;
+    top: 140px;
+    left: 10px; /* Mude para 'left' para alinhamento à esquerda */
+    text-decoration: none;
+    color: #856306;
+    z-index: 1000; /
+   }
+
+
+   #link .instagram{
+    margin-left: 100px;
+   }
+
+   #link .instagram:hover{
+    color:crimson;
+   }
+
+   #link #inicio{
+    margin-top: 8px;
+    margin-bottom: -35px;
+   }
+
+   #link #inicio:hover{
+    color: crimson;
+   }
+
+   #link #produtos{
+    margin-left: 70px;
+    margin-bottom: -35px;
+   }
+
+   #link #produtos:hover{
+    color: crimson;
+   }
+
+   #link #contato1{
+    margin-left: 160px;
+    margin-bottom: -35px;
+   }
+
+   #link #contato1:hover{
+    color: crimson;
+   }
+
+   #link #localizacao{
+    margin-left: 240px;
+   }
+
+   #link #localizacao:hover{
+    color: crimson;
+   }
+
+   #bolo p{
+    padding-top: 50px;
+    font-size: 30px;
+   }
+
+   #bolo span{
+    font-size: 50px;
+   }
+
+   #bolo{
+    margin-bottom: 50px;
+    margin-top: 80px;
+    background-size: 100vw;
+    height: 200px;
+   }
+
+   #Produtos{
+    padding-bottom: 20px;
+   }
+
+   #pedido{
+    padding:81px 0px 0px 0px;
+    background-size: 360px;
+    height: 0px;
+   }
+
+   #pedido a{
+    display: flex;
+    margin-left: 13px;
+    font-size: 30px;
+    margin-top: -70px;
+   }
+
+   .whatsapp-link{
+    font-size: 50px;
+    margin-top: 200px;
+   }
+
+   .popup-content{
+    margin-top: 400px;
+   }
+
+   #contato input{
+    width: 280px;
+   }
+
+   #contato textarea{
+    width: 280px;
+   }
+
+   #contato button{
+    margin-left: 120px;
+   }
 }
